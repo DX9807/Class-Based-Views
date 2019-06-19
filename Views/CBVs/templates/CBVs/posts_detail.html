@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+  <div class="jumbotron">
+    <h1>Welcome to the Post Detail Page</h1>
+    <h2>Post Details:</h2>
+    <!-- <p>Id_num: {{school_details.id}}</p> -->
+    <p>Title: {{posts_details.post_title}}</p>
+    <p>Content: {{posts_details.post_content}}</p>
+    <p>Image: {{posts_details.post_image}}</p>
+    <p>Date: {{posts_details.post_date}}</p>
+    <p>Posted By: {{posts_details.post_author}}</p>
+
+  </div>
+  <div class="container">
+    <p><a class='btn btn-warning' href="{% url 'CBVs:update' pk=posts_details.pk %}">Update</a></p>
+
+
+  </div>
+
+{% endblock %}
